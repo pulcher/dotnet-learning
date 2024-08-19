@@ -1,0 +1,13 @@
+﻿@page "/"
+@using Microsoft.Extensions.Options
+@inject IOptions<SuperSecretStuff> Options
+
+<PageTitle>Home</PageTitle>
+
+<h1>Hello, world!</h1>
+
+<p>Welcome to your new app.</p>
+
+<p>SuperSecretThing1 is @Options.Value.SecretThing1</p>
+
+<p>SuperSecretThing2 is @Options.Value.SecretThing2</p>
