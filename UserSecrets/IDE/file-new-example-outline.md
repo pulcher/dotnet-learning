@@ -1,11 +1,18 @@
-Certainly! Here's a step-by-step guide to adding user-secrets to an existing .NET 8.0 web application without using top-level statements. This example will include an endpoint to demonstrate accessing secrets from the `secrets.json` file.
-
 ### Get a base app up and running
 
 #### 1. Create or Open Your .NET 8.0 Web Application
 Create a new Blazor app.
 
+For the keyboard types:
+
+```bash
+
+dotnet new blazor --name CliApp1
+```
+
+
 #### 2. Create a simple POCO to play with
+
 ``` csharp
 namespace GetStarted
 {
@@ -15,6 +22,14 @@ namespace GetStarted
         public int SecretThing2 { get; set;}
     }
 }
+```
+
+or
+
+```bash
+
+dotnet new class --name SuperSecretStuff
+
 ```
 
 #### 3. Configure the options and show them somewhere fun
