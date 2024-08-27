@@ -34,6 +34,15 @@ dotnet new class --name SuperSecretStuff
 
 #### 3. Configure the options and show them somewhere fun
 
+Add the UserSecrests nuget package
+
+```bash 
+
+dotnet add package Microsoft.Extensions.Configuration
+dotnet add package Microsoft.Extensions.Configuration.UserSecrets
+
+```
+
 In Program.cs
 
 ``` csharp
